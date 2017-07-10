@@ -43,7 +43,7 @@ namespace RecyclerViewSearch
             _adapter = new RecyclerViewAdapter(this,chemicals);
             mLayoutManager = new LinearLayoutManager(this);
             _recyclerView.SetLayoutManager(mLayoutManager);
-            _recyclerView.SetAdapter(_adapter);//as
+            _recyclerView.SetAdapter(_adapter);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
