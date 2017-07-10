@@ -42,10 +42,8 @@ namespace RecyclerViewSearch
             _recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
             _adapter = new RecyclerViewAdapter(this,chemicals);
             mLayoutManager = new LinearLayoutManager(this);
-
             _recyclerView.SetLayoutManager(mLayoutManager);
             _recyclerView.SetAdapter(_adapter);
-            //asd
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
