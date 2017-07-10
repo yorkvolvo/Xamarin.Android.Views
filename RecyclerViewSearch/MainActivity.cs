@@ -45,6 +45,7 @@ namespace RecyclerViewSearch
 
             _recyclerView.SetLayoutManager(mLayoutManager);
             _recyclerView.SetAdapter(_adapter);
+            //asd
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
