@@ -17,7 +17,7 @@ namespace RecyclerViewSearch
 
         private Android.Support.V7.Widget.SearchView _searchView;
         private RecyclerView _recyclerView;
-        RecyclerView.LayoutManager mLayoutManager;
+        RecyclerView.LayoutManager _LayoutManager;
         private RecyclerViewAdapter _adapter;
 
         protected override void OnCreate(Bundle bundle)
@@ -41,8 +41,8 @@ namespace RecyclerViewSearch
 
             _recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
             _adapter = new RecyclerViewAdapter(this,chemicals);
-            mLayoutManager = new LinearLayoutManager(this);
-            _recyclerView.SetLayoutManager(mLayoutManager);
+            _LayoutManager = new LinearLayoutManager(this);
+            _recyclerView.SetLayoutManager(_LayoutManager);
             _recyclerView.SetAdapter(_adapter);
         }
 
